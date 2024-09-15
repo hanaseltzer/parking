@@ -115,9 +115,6 @@ class DatabaseManager:
         finally:
             cursor.close()
 
-    # def create_database():
-    #     query = 
-
 host = os.getenv('mysql_host')
 user = os.getenv('mysql_user')
 password = os.getenv('mysql_password')

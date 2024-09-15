@@ -1,0 +1,36 @@
+.sidebar {
+    /* padding-top: 100px; */
+    width: 200px;
+}
+
+.sidebar-icon {
+    padding: 1px 10px 3px 3px;
+    display: flex;
+    width: 25px;
+    height: 25px;
+    font-weight: 900;
+  }
+
+.sidebar-item {
+    padding: 1px;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-content: center;
+    height: 45px;
+    align-items: center;
+    font-weight: 100;
+    font-size: larger;
+    text-decoration: none;
+    color: black;
+    border-bottom: solid 1px;
+}
+
+.sidebar-item:hover {
+    background-color: #00000034;
+}
+
+.sidebar-item > * {
+    background-color: #00000000;
+    font-weight: 500;
+}

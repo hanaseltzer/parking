@@ -1,0 +1,28 @@
+
+  
+  .user-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #00000034;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .user-table th, .user-table td {
+    border: 1px solid #67a87188;
+    padding: 12px;
+    text-align: left;
+    transition: background-color 0.3s;
+  }
+  
+  .user-table th {
+    background-color: #00000034;
+    color: white;
+  }
+
+  
+  .user-table td {
+    font-size: 0.9rem;
+  }
+  

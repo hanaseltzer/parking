@@ -1,0 +1,73 @@
+.searchbar-input {
+    width: 100%;
+    height: 2.8rem;
+    background: #00000034;
+    border: none;
+    border-radius: 1.625rem;
+    padding: 0;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .searchbar-input input {
+    flex: 1;
+    height: 100%;
+    background: transparent;
+    border: none;
+    padding-left: 2rem;  /* Ensure padding is enough to avoid overlap with button */
+    border-radius: 1.625rem 0 0 1.625rem;
+    outline: none;
+    font-size: 1.2rem;
+    color: #000;
+    opacity: 0;  /* Start hidden */
+    transition: opacity 0.5s ease;  /* Fade in */
+  }
+  
+  .search-button {
+    height: 100%;
+    width: 100%;  /* Start with full width */
+    background: #00000034;
+    border: none;
+    border-radius: 1.625rem;  /* Keep consistent border-radius */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;  /* Align the image to the left */
+    padding-left: 1rem;  /* Ensure image is padded to the left */
+    cursor: pointer;
+    position: absolute;  /* Position it over the input */
+    top: 0;
+    right: 0;
+    transition: width 1s ease;  /* Smooth transition for width */
+  }
+  
+  .search-button:hover {
+    background-color: darkseagreen;
+  }
+  
+  .search-img {
+    width: 1.4rem;
+    height: 1.4rem;
+    background-color: #00000000;
+  }
+  
+  @keyframes shrink {
+    0% {
+      width: 100%;  /* Start at full width */
+    }
+    100% {
+      width: 3.5rem;  /* End at final button width */
+    }
+  }
+  
+  .searchbar-input.expanded .search-button {
+    animation: shrink 1s forwards;  /* Animate width reduction */
+  }
+  
+  .searchbar-input.expanded input {
+    opacity: 1;  /* Show input */
+    transition-delay: 0.5s;  /* Delay input visibility to match button shrink */
+  }
+  
